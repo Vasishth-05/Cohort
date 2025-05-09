@@ -1,0 +1,28 @@
+{
+<<<<<<< HEAD
+  "name": "simple-logger",
+=======
+  "name": "week-7-mongo",
+>>>>>>> 01ec341 (Mongo database practice)
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+<<<<<<< HEAD
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+=======
+    "bcrypt": "^5.1.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.1"
+>>>>>>> 01ec341 (Mongo database practice)
+  }
+}
