@@ -41,19 +41,61 @@ nav button{
     margin: 0 auto;
 }
 
-main{
+.hero{
     display: flex;
     align-items: center;
     height: calc(100vh - 72px);
 }
 
-.left h1{
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-content h1 {
     font-weight: 800;
     font-size: 108px;
     line-height: 102px;
 }
 
+.hero-content p {
+    font-weight: 600;
+    color: var(--grey);
+    max-width: 400px;
+}
 
+.hero-btn{
+    display: flex;
+    gap: 40px;
+}
+
+.first{
+    color: white;
+    background: var(--red);
+    border: none;
+    border-radius: 15px;
+    height: 29px;
+    width: 109px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.second{
+    color: var(--grey);
+    background: white;
+    width: 109px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.brand-icons{
+    display: flex;
+    gap: 10px;
+}
 
 
 

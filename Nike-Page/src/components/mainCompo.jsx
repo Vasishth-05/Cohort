@@ -1,29 +1,24 @@
-export function MainCompo(){
+export function Hero(){
     return (
-        <main>
-            <div className="Left container">
-            <h1>
-                YOUR FEET 
-                DESERVE
-                THE BEST
-            </h1>
-            <p className="first">
-                YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.
-            </p>
-            <div className="btn">
-                <button className="shopNow">Shop Now</button>
-                <button className="category">Categorys</button>
+        <main className="hero container">
+            <div className="hero-content">
+                <h1>YOUR FEET DESERVES THE BEST</h1>
+                <p>WERE HERE TO TRANSFORM YOU WITH THIS CONTENT FIGURE THAT WILL MAKE YOU THINK THAT WHAT HAPPENED PRABHUJI AND THIS AND THAT AND ETC</p>
+                <div className="hero-btn">
+                    <button className="first">Shop Now</button>
+                    <button className="second">Category</button>
+                </div>
+                <div className="shopping">
+                    <p>Also Available on</p>
+                    <div className="brand-icons">
+                        <img src="/images/amazon.png" alt="amazon" />
+                        <img src="/images/flipkart.png" alt="flipkart" />
+                    </div>
+                </div>
             </div>
-            <p className="second">Also Available On</p>
-            <div className="img">
-                <img src="/images/amazon.png" alt="amazon-logo" />
-                <img src="/images/flipkart.png" alt="flipkart-img" />
-            </div>
-            </div>
-            <div className="Second">
-                <img src="/images/shoe_image.png" alt="nike-shoe" />
+            <div className="hero-img">
+                <img src="/images/shoe_image.png" alt="shoe" />
             </div>
         </main>
     )
 }
-
