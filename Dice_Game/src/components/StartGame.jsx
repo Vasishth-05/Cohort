@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../styled/button";
 
 const StartGame = ({toggle}) => {
   return (
@@ -31,20 +32,3 @@ const Container = styled.div`
         }
     }
 ` 
-const Button = styled.button`
-    color: white;
-    background: black;
-    border-radius: 5px;
-    padding: 10px 18px;
-    min-width: 220px;
-    font-size: 16px;
-    transition: 0.4s background ease-in-out;
-
-    &:hover{
-        color: black;
-        background: white;
-        cursor: pointer;
-        transition: 0.3s background ease-in-out;
-        
-    }
-`
