@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+
+import "./App.css";
+import { RecoilRoot, useRecoilValue } from "recoil";
+import { networkAtom, jobsAtom, notificationAtom, messagingAtom, concatinateSelector } from "./Atom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <RecoilRoot>
+      <Main/>
+    </RecoilRoot>
+  );
+}
+
+function Main(){
+
+  const NetworkCount = useRecoilValue(networkAtom);
+  const JobsCount = useRecoilValue(jobsAtom);
+  const NotificationCount = useRecoilValue(notificationAtom);
+  const MessagingCount = useRecoilValue(messagingAtom);
+  const ToatalByConcatinating = useRecoilValue(concatinateSelector);
+  return(
+    <div>
+      <button>Home</button>
+
+      <button>Jobs({JobsCount})</button>
+      <button>Network({NetworkCount})</button>
+      <button>Notification({NotificationCount})</button>
+      <button>Messaging({MessagingCount})</button>
+
+      <button>Me({ToatalByConcatinating})</button>
+    </div>
   )
 }
 
-export default App
+
+export default App;
