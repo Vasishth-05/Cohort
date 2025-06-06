@@ -3,22 +3,39 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <Main/>
-    </>
+    <div className='flex '>
+      <SideBar/>
+      <MainBody/>
+    </div>
   )
 }
 
-function Main(){
+function SideBar(){
   return (
-  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-      <img class="size-12 shrink-0" src="./images/message.png" alt="ChitChat Logo" />
-    <div>
-      <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
-      <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
+    <div className=' bg-blue-400 h-screen w-[200px] '>
+      hare
     </div>
-  </div>
   )
+}
+
+function MainBody(){
+  return(
+   <div className='w-full'> 
+    <div className=' h-48 bg-black'></div>
+    <div className='grid grid-cols-9 gap-8 p-8 '>
+      <div className='bg-green-300 h-96 col-span-2 -translate-y-20 rounded-2xl shadow-xl/20 h-[300px]'>
+        hare
+      </div>
+      <div className='bg-yellow-300 h-96 col-span-4 rounded-2xl shadow-xl/20 '>
+        krsna
+      </div>
+      <div className='bg-red-400 h-96 col-span-3 rounded-2xl shadow-xl/20 '>
+        krsna
+      </div>
+    </div>
+   </div>  
+  )
+
 }
 
 export default App
