@@ -3,7 +3,7 @@ const connectDB = async () => {
     try {
         const conn = await moongoose.connect(process.env.MONGO_URL);
 
-        console.log(`MongoDB connected : ${conn.connection.host}`.bgBlue.underline);
+        console.log(`MongoDB connected : ${conn.connection.host}`.cyan.bgMagenta.underline);
         
     } catch (error) {
         console.log(error);
