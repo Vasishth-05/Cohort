@@ -1,5 +1,5 @@
 import { useState} from "react";
-import { FaUser } from "react-icons/fa";
+import { FaSignInAlt } from "react-icons/fa";
 
 
 function Register() {
@@ -15,7 +15,7 @@ function Register() {
 
   const onchange = (e) => {
      setFormData((prevState)=>({
-      ...prevState,
+      prevState,
       [e.target.name]: e.target.value,
      }))
   }
@@ -29,8 +29,9 @@ function Register() {
     
     <section className="heading">
        <h1>
-        <FaUser/>Register
+        <FaSignInAlt/>Register
        </h1>
+       <p>Create an Account</p>
     </section>
 
     <section className="form">
